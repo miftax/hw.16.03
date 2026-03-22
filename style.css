@@ -127,7 +127,7 @@ select:hover,
 
 .skills-block {
     display: flex;
-    
+    flex-direction: column-reverse;
     /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
 }
 
