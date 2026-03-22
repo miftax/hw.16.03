@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+    /* 📍 Максимальная ширина для контейнера */
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #303030;
+}
+
+header {
+    background-color: #2965F1;
+    padding: 23px 0;
+}
+
+header span {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.main-section {
+    background-color: #fafaff;
+    padding: 60px 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 📍 Свойства flexbox для размещения container-a вертикально по центру */
+}
+
+.main-section .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 📍 Свойствa flexbox для размещения блока с текстом и изображения в ряд, и центрирования их по вертикали */
+}
+
+.text-wrapper {
+    max-width: 425px;
+    /* 📍 Cвойство для ограничения ширины блока с текстом в первой секции */
+}
+
+.main-title {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.main-text {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.main-image {
+    max-width: 715px;
+}
+
+.about-section {
+    background-color: #fff;
+    padding: 100px 0;
+}
+
+.about-section .wrapper {
+    display: flex;
+    gap: 20px;
+    /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
+}
+
+select {
+    border: 1px solid rgba(48, 48, 48, 0.3);
+    border-radius: 5px;
+    width: 150px;
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 16px;
+    appearance: none; 
+    background-image: url("./ep_arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+}
+
+select:hover,
+.text-field:hover {
+    border: 1px solid #2965f1;
+    /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
+}
+
+
+.info-wrapper {
+    display: flex;
+    /* 📍 Свойство flexbox для расположения 2-х списков в ряд */
+}
+
+.section-title {
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.frameworks,
+.books {
+    min-width: 50%;
+}
+
+.frameworks-list,
+.books-list {
+    gap: 20px;
+    /* 📍 Свойства flexbox для отступов между элементами в списках */
+}
+
+.frameworks-list {
+    font-weight: 400;
+    font-size: 16px;
+    list-style-image: url(./solar_map-arrow-up-bold.svg);
+    padding-left: 20px;
+}
+
+.skills-block {
+    /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
+}
+
+.skills {
+    /* 📍 Свойства flexbox для расположения элементов с классом .label */
+}
+
+.books-list {
+    font-weight: 400;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.label {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+form {
+    margin-bottom: 40px;
+}
+
+.text-field {
+    border: 1px solid rgba(48, 48, 48, 0.3);
+    border-radius: 5px;
+    max-width: 330px;
+    width: 100%;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px 12px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.btn {
+    border: none;
+    border-radius: 5px;
+    width: 125px;
+    height: 36px;
+    background-color: #2965f1;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+
+.btn:hover {
+    background: rgba(41, 101, 241, 0.9);
+    cursor: pointer;
+    /* 📍 Стили для кнопки при наведении курсора */
+}
+
+.line {
+    margin: 60px 0;
+}
+
+table {
+    border: 1px solid #95a1bb;
+    border-collapse: collapse;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 12px 15px;
+}
+
+footer {
+    background-color: rgba(163, 167, 255, 0.3);
+    padding: 26px 0;
+    text-align: center;
+    /* 📍 Свойство для расположения ссылки горизонтально по центру */
+}
+
+.footer-link {
+    font-weight: 400;
+    font-size: 14px;
+    color: #2965f1;
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    /* 📍 Стили для ссылки при наведении курсора */
+}
