@@ -72,6 +72,7 @@ header span {
 
 .about-section .wrapper {
     display: flex;
+    flex-wrap: wrap;
     gap: 60px;
     /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
 }
@@ -133,6 +134,7 @@ select:hover,
 
 .skills {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     /* 📍 Свойства flexbox для расположения элементов с классом .label */
 }
