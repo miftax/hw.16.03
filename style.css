@@ -5,7 +5,7 @@
 }
 
 .container {
-    outline: 1px solid red; /* чтобы контейнер был виден, в конце можно будет удалить это св-во */
+    /* outline: 1px solid red; чтобы контейнер был виден, в конце можно будет удалить это св-во */
     margin: 0 auto;
     width: 100%;
     max-width: 1140px;
@@ -72,9 +72,10 @@ header span {
 
 .about-section .wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 60px;
-    /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-wrapper  */
+    /* 📍 Свойствa flexbox для отступов между элементами select, .info-wrapper и .skills-
+    wrapper  */
 }
 
 select {
@@ -92,7 +93,7 @@ select {
 
 select:hover,
 .text-field:hover {
-    border: 1px solid #2965f1;
+    outline: 1px solid #2965f1;
     /* 📍 Стили для выпадающего списка и текстового поля при наведении курсора */
 }
 
@@ -115,6 +116,9 @@ select:hover,
 
 .frameworks-list,
 .books-list {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
     gap: 16px;
     /* 📍 Свойства flexbox для отступов между элементами в списках */
 }
@@ -129,12 +133,14 @@ select:hover,
 .skills-block {
     display: flex;
     flex-direction: column-reverse;
+
     /* 📍 Свойства flexbox для расположения формы над элементами с классом .label */
 }
 
 .skills {
+    min-width: 50%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 20px;
     /* 📍 Свойства flexbox для расположения элементов с классом .label */
 }
@@ -148,6 +154,7 @@ select:hover,
 .label {
     font-weight: 400;
     font-size: 16px;
+    
 }
 
 form {
